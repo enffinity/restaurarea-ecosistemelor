@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap');
+
+@font-face {
+    font-family: 'bw';
+    src: url('https://robindelaporte.fr/codepen/play/BwModelicaSS01-ExtraBold.woff') format('woff');
+}
+
+$font: 'bw', 'Tilt Warp', Helvetica, Arial, sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+// Content
+#body {
+    background-color: rgb(7, 7, 7);
+    background-image: url(/imgs/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    width: 100vw;
+    header.header {
+        text-align: center;
+        .title {
+            padding-top: 2.5rem;
+            font-size: clamp(1rem, 4.5rem, 3rem);
+            color: white;
+            font-family: $font;
+            .eco {
+                color: #2ecc71;
+            }
+        }
+        .subtitle {
+            color: white;
+            font-family: $font;
+            opacity: .6;
+        }
+    }
+    main.main {
+        color: white;
+        margin: 0 auto;
+        max-width: 110rem;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        h1 {
+            font-size: 2rem;
+        }
+        p {
+            line-height: 1.5;
+            font-size: clamp(1rem, 2.8vh, 2.8vh);
+        }
+    }
+    footer.footer {
+        text-align: center;
+        h1 {
+            a {
+                color: #3783b6;
+                font-family: 'bw';
+                font-size: 1em;
+            }
+        }
+    }
+}

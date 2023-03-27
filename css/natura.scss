@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'bw';
+    src: url('https://robindelaporte.fr/codepen/play/BwModelicaSS01-ExtraBold.woff') format('woff');
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: 'bw';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(15, 15, 15);
+    margin: 0rem;
+    overflow: hidden;
+    #image-track {
+        display: flex;
+        gap: 4vmin;
+        position: absolute;
+        left: 40%;
+        top: 50%;
+        transform: translate(0%, -50%);
+        user-select: none;
+        .image {
+            width: 40vmin;
+            height: 56vmin;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+    .back-btn {
+        padding: 1rem;
+        font-family: 'bw';
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.65rem;
+            opacity: .7;
+            transition: .3s ease;
+            &:hover {
+                transition: .3s ease;
+                opacity: 1;
+            }
+        }
+    }
+    .plus {
+        position: absolute;
+        z-index: 99999;
+        width: 40px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: .75;
+    }
+    .slide {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 350%);
+        opacity: .75;
+        i {
+            padding-left: 10px;
+            font-size: 3rem;
+        }
+    }
+    .sursa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(40.5vw, 44vh);
+        font-size: 1.5em;
+        a {
+            color: #3498db;
+            transition: .3s ease;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                transition: .3s ease;
+            }
+        }
+    }
+}
